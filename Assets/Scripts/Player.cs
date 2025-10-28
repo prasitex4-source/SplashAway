@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         playerRigidbody2d = GetComponent<Rigidbody2D>(); //Get the Rigidbody2D component from the player.
-        audiomanagerInstance = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>(); //Get the AudioManager from the scene.
     }
 
     void FixedUpdate()
